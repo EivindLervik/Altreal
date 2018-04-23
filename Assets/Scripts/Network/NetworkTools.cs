@@ -9,6 +9,12 @@ public class NetworkTools {
     public NetworkTools()
     {
         dao = new DAO(true);
+        dao.Connect();
+    }
+
+    public bool IsConnected()
+    {
+        return dao.IsConnected;
     }
 
 }
