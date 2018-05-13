@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NetworkTools {
 
-    private DAO dao;
+    private static DAO dao;
 
     public NetworkTools()
     {
