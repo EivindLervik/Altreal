@@ -1,0 +1,7 @@
+Address:	http://192.168.33.22:3000/
+
+Username:	Player1
+Password:	player
+
+Start server:	vagrant up
+Clean install:	vagrant destroy -f
