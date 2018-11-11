@@ -37,7 +37,30 @@ public class AudioHandler {
         audioMixer.SetFloat("DX_Level", newVolume);
     }
 
+    public float GetAudioChannelVolume(AudioChannel ac)
+    {
+        float vol = -1.0f;
+        switch (ac)
+        {
+            case AudioChannel.Master:
+                audioMixer.GetFloat("Master_Level", out vol);
+                break;
+            case AudioChannel.MX:
+                audioMixer.GetFloat("MX_Level", out vol);
+                break;
+            case AudioChannel.SFX:
+                audioMixer.GetFloat("SFX_Level", out vol);
+                break;
+            case AudioChannel.AX:
+                audioMixer.GetFloat("AX_Level", out vol);
+                break;
+            case AudioChannel.DX:
+                audioMixer.GetFloat("DX_Level", out vol);
+                break;
+        }
 
+        return vol;
+    }
 
     public enum AudioChannel
     {

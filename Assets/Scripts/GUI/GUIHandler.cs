@@ -13,11 +13,16 @@ public class GUIHandler {
 
     public void PromptMenu(GUIMenu menu)
     {
-
+        switch (menu)
+        {
+            case GUIMenu.Options:
+                guiMaster.OpenOptions();
+                break;
+        }
     }
 
     public enum GUIMenu
     {
-
+        Options
     }
 }

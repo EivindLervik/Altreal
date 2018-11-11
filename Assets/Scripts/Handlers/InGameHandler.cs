@@ -23,6 +23,14 @@ public class InGameHandler : MonoBehaviour {
         print(languageHandler.GetString("debug1"));
 	}
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            guiHandler.PromptMenu(GUIHandler.GUIMenu.Options);
+        }
+    }
+
     #region AudioHandler
 
     public void SetVolume(AudioHandler.AudioChannel channel, float newVolume)
