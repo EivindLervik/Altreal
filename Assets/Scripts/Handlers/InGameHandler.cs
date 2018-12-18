@@ -20,7 +20,6 @@ public class InGameHandler : MonoBehaviour {
         audioHandler = new AudioHandler(audioMixer);
         guiHandler = new GUIHandler(gui);
         languageHandler = new LanguageHandler(LanguageHandler.Language.english);
-        print(languageHandler.GetString("debug1"));
 	}
 
     private void Update()
@@ -62,6 +61,15 @@ public class InGameHandler : MonoBehaviour {
     public void PromptMenu(GUIHandler.GUIMenu menu)
     {
         guiHandler.PromptMenu(menu);
+    }
+
+    #endregion
+
+    #region Language
+
+    public static string Language_GetString(string key)
+    {
+        return languageHandler == null ? "" : languageHandler.GetString(key);
     }
 
     #endregion

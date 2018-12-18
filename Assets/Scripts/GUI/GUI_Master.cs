@@ -9,6 +9,7 @@ public class GUI_Master : MonoBehaviour {
     private void Start()
     {
         CloseAllMenues();
+        OpenOptions(); // Debug
     }
 
     public void OpenOptions()

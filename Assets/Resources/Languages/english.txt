@@ -1,1 +1,17 @@
-﻿debug1 <SPACE> This is english!
+﻿cancel <SPACE> Cancel
+back <SPACE> Back
+mainMenu_touch <SPACE> Touch the screen to continue
+mainMenu_welcome <SPACE> Welcome to Altreal
+mainMenu_login <SPACE> Log in
+mainMenu_options <SPACE> Options
+mainMenu_about <SPACE> About
+login_username <SPACE> Enter username...
+login_password <SPACE> Enter password...
+login_connecting <SPACE> Connecting to Altreal...
+about_text <SPACE> This is a description for the game... More to come...
+options_options <SPACE> Options
+options_overall <SPACE> Overall
+options_music <SPACE> Music
+options_sfx <SPACE> SFX
+options_ambient <SPACE> Ambient
+options_dialog <SPACE> Dialog

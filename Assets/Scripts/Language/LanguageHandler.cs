@@ -33,7 +33,15 @@ public class LanguageHandler {
 
     public string GetString(string key)
     {
-        return dictionary[key];
+        if (dictionary.ContainsKey(key))
+        {
+            return dictionary[key];
+        }
+        else
+        {
+            Debug.LogWarning("The key '" + key + "' does not have an entry for the language '" + language + "'.");
+            return "Missing Key";
+        }
     }
 
     public enum Language
