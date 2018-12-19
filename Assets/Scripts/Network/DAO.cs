@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using WebSocketSharp;
+using System.Threading;
 
 public class DAO {
 
@@ -55,5 +56,4 @@ public class DAO {
     {
         Debug.LogWarning("CLOSE: (" + e.Code + ") - " + e.Reason);
     }
-
 }

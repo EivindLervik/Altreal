@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -70,6 +71,16 @@ public class InGameHandler : MonoBehaviour {
     public static string Language_GetString(string key)
     {
         return languageHandler == null ? "" : languageHandler.GetString(key);
+    }
+
+    #endregion
+
+    #region Network
+
+    public static bool Network_Authenticate()
+    {
+        //Thread.Sleep(1000);
+        return true;
     }
 
     #endregion
