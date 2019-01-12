@@ -14,6 +14,7 @@ public class InGameHandler : MonoBehaviour {
     public static AudioHandler audioHandler;
     public static GUIHandler guiHandler;
     public static LanguageHandler languageHandler;
+    public static SettingsHandler settingsHandler;
 
 	void Awake () {
         networkTools = new NetworkTools();
@@ -21,6 +22,7 @@ public class InGameHandler : MonoBehaviour {
         audioHandler = new AudioHandler(audioMixer);
         guiHandler = new GUIHandler(gui);
         languageHandler = new LanguageHandler(LanguageHandler.Language.english);
+        settingsHandler = new SettingsHandler();
 	}
 
     private void Update()
@@ -81,6 +83,15 @@ public class InGameHandler : MonoBehaviour {
     {
         //Thread.Sleep(1000);
         return true;
+    }
+
+    #endregion
+
+    #region Settings
+
+    public static bool Settings_GetUseMilitaryTime()
+    {
+        return settingsHandler.useMilitaryTime;
     }
 
     #endregion
