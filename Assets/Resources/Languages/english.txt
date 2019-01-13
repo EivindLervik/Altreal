@@ -15,3 +15,5 @@ options_music <SPACE> Music
 options_sfx <SPACE> SFX
 options_ambient <SPACE> Ambient
 options_dialog <SPACE> Dialog
+options_language <SPACE> Select a language:
+ok <SPACE> OK!

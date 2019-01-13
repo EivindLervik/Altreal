@@ -92,6 +92,7 @@ public class MainMenuScript : MonoBehaviour
                 mainMenuPivot.position = Vector3.Lerp(mainMenuPivot.position, new Vector3(0.0f, Screen.height, mainMenuPivot.position.z), Time.deltaTime * prepareTime * 5.0f);
                 loginPivot.position = Vector3.Lerp(loginPivot.position, new Vector3(Screen.width, loginPivot.position.y, loginPivot.position.z), Time.deltaTime * prepareTime * 5.0f);
                 infoPivot.position = Vector3.Lerp(infoPivot.position, new Vector3(infoPivot.position.x, Screen.height * 2, infoPivot.position.z), Time.deltaTime * prepareTime * 5.0f);
+                optionsPivot.position = Vector3.Lerp(optionsPivot.position, new Vector3(optionsPivot.position.x, 0.0f, optionsPivot.position.z), Time.deltaTime * prepareTime * 5.0f);
                 //loginPivot.localEulerAngles = Vector3.Slerp(loginPivot.localEulerAngles, new Vector3(0.0f, 90.0f, 0.0f), Time.deltaTime * prepareTime * 5.0f);
                 break;
             case State.Login:
@@ -107,6 +108,10 @@ public class MainMenuScript : MonoBehaviour
             case State.Info:
                 mainMenuPivot.position = Vector3.Lerp(mainMenuPivot.position, new Vector3(mainMenuPivot.position.x, 0.0f, mainMenuPivot.position.z), Time.deltaTime * prepareTime * 5.0f);
                 infoPivot.position = Vector3.Lerp(infoPivot.position, new Vector3(infoPivot.position.x, Screen.height, infoPivot.position.z), Time.deltaTime * prepareTime * 5.0f);
+                break;
+            case State.Options:
+                mainMenuPivot.position = Vector3.Lerp(mainMenuPivot.position, new Vector3(mainMenuPivot.position.x, Screen.height * 2.0f, mainMenuPivot.position.z), Time.deltaTime * prepareTime * 5.0f);
+                optionsPivot.position = Vector3.Lerp(optionsPivot.position, new Vector3(optionsPivot.position.x, Screen.height, optionsPivot.position.z), Time.deltaTime * prepareTime * 5.0f);
                 break;
             case State.Game:
                 connectingPivot.position = Vector3.Lerp(connectingPivot.position, new Vector3(-Screen.width, connectingPivot.position.y, connectingPivot.position.z), Time.deltaTime * prepareTime * 5.0f);
