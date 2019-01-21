@@ -94,5 +94,10 @@ public class InGameHandler : MonoBehaviour {
         return settingsHandler.useMilitaryTime;
     }
 
+    public static CurrentClothingSettings Settings_GetCurrentClothingSettings()
+    {
+        return settingsHandler.currentClothingSettings;
+    }
+
     #endregion
 }

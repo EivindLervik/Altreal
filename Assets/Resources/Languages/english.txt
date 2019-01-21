@@ -17,3 +17,5 @@ options_ambient <SPACE> Ambient
 options_dialog <SPACE> Dialog
 options_language <SPACE> Select a language:
 ok <SPACE> OK!
+clothing_change <SPACE> Change Clothing
+clothing_color <SPACE> Color
