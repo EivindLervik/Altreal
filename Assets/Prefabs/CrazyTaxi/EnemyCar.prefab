@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a80ef58da6c97a24a8f90dfc642f1306, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myLane: 0
 --- !u!1001 &3809207858838716753
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28,6 +29,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0266880213956ca428cc0e77d35aff8f, type: 2}
+    - target: {fileID: 830429098452059371}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1582033621439263367}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -78,8 +83,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2571514613812838548}
       propertyPath: m_Name
+      value: EnemyCar
+      objectReference: {fileID: 0}
+    - target: {fileID: 2571514613812838548}
+      propertyPath: m_Name
       value: Car
       objectReference: {fileID: 0}
+    - target: {fileID: 4292789051906880584}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0266880213956ca428cc0e77d35aff8f, type: 2}
     - target: {fileID: 4292789051906880584}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -94,6 +107,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0266880213956ca428cc0e77d35aff8f, type: 2}
+    - target: {fileID: 4565313566136550842, guid: a7208b9724c092b4195900f31faf7322,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7208b9724c092b4195900f31faf7322, type: 3}
 --- !u!1 &2571514613812838548 stripped
@@ -111,6 +129,12 @@ Transform:
 --- !u!23 &4292789051906880584 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 1102830759496725785, guid: a7208b9724c092b4195900f31faf7322,
+    type: 3}
+  m_PrefabInstance: {fileID: 3809207858838716753}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &830429098452059371 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4565313566136550842, guid: a7208b9724c092b4195900f31faf7322,
     type: 3}
   m_PrefabInstance: {fileID: 3809207858838716753}
   m_PrefabAsset: {fileID: 0}

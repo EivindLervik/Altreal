@@ -19,3 +19,7 @@ options_language <SPACE> Select a language:
 ok <SPACE> OK!
 clothing_change <SPACE> Change Clothing
 clothing_color <SPACE> Color
+minigames_level <SPACE> Level
+minigames_score <SPACE> Score
+minigames_leaderboard <SPACE> Leaderboard
+minigames_restart <SPACE> Play again!
